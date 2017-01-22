@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+	<div class="main-page-holder">
+		<header class="main-header">
+			<nav class="main-nav">
+			<ul>
+				<li>
+					<a class="main-nav-item" href="#">Информация</a>
+				</li>
+				<li>
+					<a class="main-nav-item" href="#">Фото и видео</a>
+				</li>
+				<img class="main-logo" src="img/main-logo.png" width="138" height="70" alt="city of sedona">
+				<li>
+					<a class="main-nav-item" href="#">Карта штата</a>
+				</li>
+				<li>
+					<a class="main-nav-item" href="#">Гостиницы</a>
+				</li>
+			</ul>
+			</nav>
+			</header>
+			<div class="hotels-form">
+				<form class="hotels-form-filter" action="https://echo.htmlacademy.ru" method="get" oninput=cost-output.value=cost.value >
+					<fieldset>
+						<legend>Инфраструктура:</legend>
+						<label><input type="checkbox" name="pool" checked >Бассейн</label>
+						<label><input type="checkbox" name="parking">Парковка</label>
+						<label><input type="checkbox" name="Wi-fi">Wi-Fi</label>
+					</fieldset>
+					<fieldset>
+						<legend>Тип жилья:</legend>
+						<label><input type="checkbox" name="hotel" checked>Гостиница</label>
+						<label><input type="checkbox" name="motel" checked>Мотель</label>		
+						<label><input type="checkbox" name="apartments" checked>Апартаменты</label>
+					</fieldset>
+					<p> Стоимость в сутки(р):</p>
+					<output name="cost-output">3000</output>
+					<input type="range" id="cost" name="cost" min="0" max="4000" step="10">
+					<a class="hotels-form-btn" href="#">Показать</a>
+				</form>
+		</div>
+		<div class="hotels-sorting">
+			<p class="hotels-count-result">Найдено:3</p>
+			<p>Сортировка:</p>
+			<a class="hotels-sorting-option">По цене</a>
+			<a class="hotels-sorting-option">По типу</a>
+			<a class="hotels-sorting-option">По рейтингу</a>
+			<a class="hotels-sorting-order">По возрастанию</a>
+			<a class="hotels-sorting-order">По убыванию</a>			
+		</div>
+		<section class="hotels-result">
+			<div class="hotels-result-item">
+				<img src="#" alt="Amara resort & spa">
+				<h3>Amara resort & spa</h3>
+				<p>Гостиница</p>
+				<p>От 4000р.</p>
+				<a class="btn-hotels-more" href="#">Подробнее</a>
+				<a class="btn-hotels-reserve" href="#">Забронировать</a>
+				<p class="hotels-rating">Рейтинг:8,5<p>
+			</div>
+			<div class="hotels-result-item">
+			<img src="#" alt="Desert quail inn">
+			<h3>Desert quail inn</h3>
+				<p>Мотель</p>
+				<p>От 3000р.</p>
+				<a class="btn-hotels-more" href="#">Подробнее</a>
+				<a class="btn-hotels-reserve" href="#">Забронировать</a>
+				<p class="hotels-rating">Рейтинг:8,9<p>
+			</div>
+			<div class="hotels-result-item">
+			<img src="#" alt="Villas at poco diablo">
+			<h3>Villas at poco diablo</h3>
+				<p>Апартаменты</p>
+				<p>От 2000р.</p>
+				<a class="btn-hotels-more" href="#">Подробнее</a>
+				<a class="btn-hotels-reserve" href="#">Забронировать</a>
+				<p class="hotels-rating">Рейтинг:9,2<p>
+			</div>
+		</section>
+		</div>
+		<footer class="main-footer">
+			<div class="footer-hashtag">	
+				<p> #visitsedona</p>
+			</div>
+			<div class="footer-social">
+				<a class="btn-social">Твиттер</a>
+				<a class="btn-social">Фейсбук</a>
+				<a class="btn-social">Ютуб</a>
+			</div>
+			<div class="footer-copyright">
+				<p>website by <img class="footer-copyright-logo" src="#" alt="html academy"></p>
+			</div>
+		</footer>
+		</div>
+  </body>
+</html>
