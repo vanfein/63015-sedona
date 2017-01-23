@@ -15,7 +15,6 @@
 				<li>
 					<a class="main-nav-item" href="#">Фото и видео</a>
 				</li>
-				<img class="main-logo" src="img/main-logo.png" width="138" height="70" alt="city of sedona">
 				<li>
 					<a class="main-nav-item" href="#">Карта штата</a>
 				</li>
@@ -23,10 +22,11 @@
 					<a class="main-nav-item" href="#">Гостиницы</a>
 				</li>
 			</ul>
+			<a href="#"><img class="main-logo" src="img/main-logo.png" width="138" height="70" alt="city of sedona"></a>
 			</nav>
 			</header>
 			<div class="hotels-form">
-				<form class="hotels-form-filter" action="https://echo.htmlacademy.ru" method="get" oninput=cost-output.value=cost.value >
+				<form class="hotels-form-filter" action="https://echo.htmlacademy.ru" method="get" oninput="cost-output.value=cost.value" >
 					<fieldset>
 						<legend>Инфраструктура:</legend>
 						<label><input type="checkbox" name="pool" checked >Бассейн</label>
@@ -39,14 +39,17 @@
 						<label><input type="checkbox" name="motel" checked>Мотель</label>		
 						<label><input type="checkbox" name="apartments" checked>Апартаменты</label>
 					</fieldset>
-					<p> Стоимость в сутки(р):</p>
-					<output name="cost-output">3000</output>
-					<input type="range" id="cost" name="cost" min="0" max="4000" step="10">
+					<fieldset> 
+						<legend>Стоимость в сутки(р):</legend>
+						<span>от 0</span>
+						<span>до</span><output name="cost-output">3000</output>
+						<input type="range" id="cost" name="cost" min="0" max="4000" step="10">
+					</fieldset>
 					<a class="hotels-form-btn" href="#">Показать</a>
 				</form>
 		</div>
 		<div class="hotels-sorting">
-			<p class="hotels-count-result">Найдено:3</p>
+			<h2>Найдено:3</h2>
 			<p>Сортировка:</p>
 			<a class="hotels-sorting-option">По цене</a>
 			<a class="hotels-sorting-option">По типу</a>
@@ -62,7 +65,13 @@
 				<p>От 4000р.</p>
 				<a class="btn-hotels-more" href="#">Подробнее</a>
 				<a class="btn-hotels-reserve" href="#">Забронировать</a>
-				<p class="hotels-rating">Рейтинг:8,5<p>
+				<div class="hotels-rating">
+					<img class="hotels-rating-star" src="#" width="17" height="17">
+					<img class="hotels-rating-star" src="#" width="17" height="17">
+					<img class="hotels-rating-star" src="#" width="17" height="17">
+					<img class="hotels-rating-star" src="#" width="17" height="17">
+					<p class="hotels-rating-paragraph">Рейтинг:8,5</p>
+				</div>
 			</div>
 			<div class="hotels-result-item">
 			<img src="#" alt="Desert quail inn">
@@ -71,7 +80,12 @@
 				<p>От 3000р.</p>
 				<a class="btn-hotels-more" href="#">Подробнее</a>
 				<a class="btn-hotels-reserve" href="#">Забронировать</a>
-				<p class="hotels-rating">Рейтинг:8,9<p>
+				<div class="hotels-rating">
+					<img class="hotels-rating-star" src="#" width="17" height="17">
+					<img class="hotels-rating-star" src="#" width="17" height="17">
+					<img class="hotels-rating-star" src="#" width="17" height="17">
+					<p class="hotels-rating-paragraph">Рейтинг:8,9</p>
+				</div>
 			</div>
 			<div class="hotels-result-item">
 			<img src="#" alt="Villas at poco diablo">
@@ -80,13 +94,17 @@
 				<p>От 2000р.</p>
 				<a class="btn-hotels-more" href="#">Подробнее</a>
 				<a class="btn-hotels-reserve" href="#">Забронировать</a>
-				<p class="hotels-rating">Рейтинг:9,2<p>
+				<div class="hotels-rating">
+					<img class="hotels-rating-star" src="#" width="17" height="17">
+					<img class="hotels-rating-star" src="#" width="17" height="17">
+					<p class="hotels-rating-paragraph">Рейтинг:9,2</p>
+					</div>
 			</div>
 		</section>
 		</div>
 		<footer class="main-footer">
 			<div class="footer-hashtag">	
-				<p> #visitsedona</p>
+				 #visitsedona
 			</div>
 			<div class="footer-social">
 				<a class="btn-social">Твиттер</a>
@@ -94,7 +112,7 @@
 				<a class="btn-social">Ютуб</a>
 			</div>
 			<div class="footer-copyright">
-				<p>website by <img class="footer-copyright-logo" src="#" alt="html academy"></p>
+				<p>website by <a href="https://htmlacademy.ru"><img class="footer-copyright-logo" src="#" alt="html academy"></a></p>
 			</div>
 		</footer>
 		</div>
