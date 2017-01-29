@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 		<div class="main-page-holder">
@@ -28,13 +29,12 @@
 				</nav>
 			</header>
 			<div class="index-promo">
-				<span>Welcome</span>
-				<span>to the gorgeous</span> 
-				<h1>Sedona</h1> 
-				<span>"Because the Grand Canyon sucks!"</span>
-			</div>		
+        <h1>
+          <img src="img/welcome-sedona.png" alt="Sedona">
+        </h1>
+			</div>
 			<div class="reasons-title">
-				<h2 class="main-title">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+				<h3 class="main-title">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
 			</div>
 			<div class="reason-block-left">
@@ -51,17 +51,17 @@
 				<li class="reason-list-item">
 					<h3>Еда</h3>
 					<p> Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-				</li>	
+				</li>
 				<li class="reason-list-item">
 					<h3>Сувениры</h3>
 					<p>Не только китайского, но и местного производства!</p>
-				</li>			
-			</ul> 
+				</li>
+			</ul>
 			<div class="reason-block-right">
 				<img class="reason-block-image" src="img/index-reason-img-2.jpg" width="512" height="256" alt="">
 				<h3 class="reason-block-name">Там есть мост дьявола</h3>
 				<p> - №2 -</p>
-				<p> Да, по нему можно пройти! Если конечно вы осмелитесь</p>	
+				<p> Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 			</div>
 			<ul class="reasons">
 				<li class="reason-item">
@@ -78,7 +78,7 @@
 					<h3 class="reason-item">Мало туристов</h3>
 					<p>- №5 -</p>
 					<p>Большинство едет в Гранд Каньон и толпится там</p>
-				</li>			
+				</li>
 			</ul>
 			<div class="index-interest-block">
 				<h2>Заинтересовались?</h2>
@@ -88,7 +88,7 @@
 				</p>
 				<a class="btn">Поиск гостницы в Седоне</a>
 				<form class="index-search-hotel" action="https://echo.htmlacademy.ru" method="get">
-					<label>Дата заезда: 
+					<label>Дата заезда:
 						<input type="date" name="date-check-in">
 						<button class="seach-hotel-btn-calendar"><!--Тут будет календарик -->Выбрать дату</button>
 					</label>
@@ -96,7 +96,7 @@
 						<input type="date" name="date-check-out">
 						<button class="seach-hotel-btn-calendar"><!--Тут будет календарик -->Выбрать дату</button>
 					</label>
-					<label>Взрослые: 
+					<label>Взрослые:
 						<button class="seach-hotel-btn-inc">+</button>
 						<input type="number" name="adult" value="2">
 						<button class="seach-hotel-btn-dec">-</button>
@@ -107,11 +107,13 @@
 						<button class="seach-hotel-btn-dec">-</button>
 					</label>
 					<input type="submit" value="Найти">
-				</form> 
+				</form>
 			</div>
-			<div class="index-map"></div>
+			<div class="index-map">
+        <img src="img/map.jpg" alt="карта">
+      </div>
 			<footer class="main-footer">
-				<div class="footer-hashtag">	
+				<div class="footer-hashtag">
 					 #visitsedona
 				</div>
 				<div class="footer-social">
@@ -120,7 +122,11 @@
 					<a class="btn-social">Ютуб</a>
 				</div>
 				<div class="footer-copyright">
-					<p>website by <a href="https://htmlacademy.ru"><img class="footer-copyright-logo" src="#" alt="html academy"></a></p>
+					<p>website by
+            <a href="https://htmlacademy.ru">
+              <img class="footer-copyright-logo" src="img/footer-copyright-logo.png" alt="html academy">
+            </a>
+          </p>
 				</div>
 			</footer>
 		</div>
