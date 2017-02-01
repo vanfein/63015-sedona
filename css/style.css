@@ -5,6 +5,7 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   color:#333333;
+  margin:0px;
 }
 h2 {
   font-size: 30px;
@@ -17,5 +18,123 @@ h3 {
   line-height:26px;
   font-weight: bold;
   color: #000000;
+}
+.main-page-holder {
+  width: 1200px;
+  margin:0px auto;
+}
+.main-nav-item {
+  display: inline-block;
+  width :100px;
+  margin: 0;
+}
+.main-logo {
+  position: absolute; /*плохая идея :(( */
+  top:0px;
+  left:722px;
+}
+.main-header {
+  height:56px;
+}
+.index-promo {
+  margin-top:76px;
+  margin-left:auto;
+  margin-bottom: 140px;
+  margin-right:auto;
+  width:458px;
+}
+.reason-block-left {
+  font-size: 0px;
+  margin-top:60px;
+  margin-bottom:0;
+}
+.reason-block-decription {
+  font-size:14px;
+  height:256px;
+}
+
+.reasons-title {
+  width:490px;
+  margin-top:140px;
+  margin-left:auto;
+  margin-bottom: 60px;
+  margin-right:auto;
+}
+.reasons-list {
+  margin-top:0px;
+  padding:0px;
+  font-size: 0px;
 
 }
+.reason-list-item h3 {
+  margin-top:0px;
+}
+.reason-list-item {
+  font-size: 14px;
+  height:330px;
+
+
+}
+.reason-block-right {
+  font-size:0px;
+}
+
+.reasons {
+  margin-top:0px;
+  padding:0px;
+  font-size: 0px;
+}
+.reason-item {
+
+  font-size: 14px;
+  height:256px;
+
+}
+ .index-interest-block h2 {
+  margin-top:0px;
+
+}
+ .index-interest-block{
+  margin-top:0px;
+  height:291px;
+
+}
+.main-footer {
+  font-size: 0px;
+}
+
+/* GRID */
+
+.layout-column {
+  display:inline-block;
+  width: 400px;
+  vertical-align: top;
+}
+.layout-column-2-in-1 {
+  display: inline-block;
+  vertical-align:top;
+}
+.footer-layout-column {display:inline-block;
+width:400px;
+height:120px;
+font-size: 14px;}
+/* 'это просто для того что бы различить блоки' */
+.main-page-holder { background: #000000;}
+.main-header { background: #fd3a25;}
+.index-promo { background: #AAA888;}
+.reasons-title {background:#d9edf7; }
+.reason-block-left {background: #650673;}
+.reasons-list {background: #f3b0b2;}
+.reason-block-right {background: #650673;}
+.reasons {background:#d9edf7; }
+.index-interest-block { background: #fd3a25;}
+.index-search-hotel {background: #AAA888;}
+.main-nav-item {background: #f3b0b2;}
+.reason-block-decription {background: #fd3a25;}
+.reason-list-item:nth-child(1) { background: #fd3a25;
+}
+.reason-list-item:nth-child(2) { background: #AAA888;
+}
+.reason-list-item:nth-child(3) { background: #fd3a25;
+}
+/* тут все закончилось */
