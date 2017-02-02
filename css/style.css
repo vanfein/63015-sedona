@@ -15,126 +15,136 @@ h2 {
 }
 h3 {
   font-size: 21px;
-  line-height:26px;
+  line-height:21px;
   font-weight: bold;
   color: #000000;
 }
 .main-page-holder {
   width: 1200px;
-  margin:0px auto;
+  margin: 0px auto;
+}
+.main-header {
+  position: relative;
+  height: 22px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+.main-nav-list {
+  font-size: 0px;
 }
 .main-nav-item {
   display: inline-block;
-  width :100px;
+  width: 20%;
   margin: 0;
+  font-size: 14px;
 }
 .main-logo {
   position: absolute; /*плохая идея :(( */
-  top:0px;
-  left:722px;
-}
-.main-header {
-  height:56px;
+  top: 0px;
+  left: 530px;
 }
 .index-promo {
-  margin-top:76px;
-  margin-left:auto;
+  width: 458px;
+  margin-top: 76px;
+  margin-left: auto;
   margin-bottom: 140px;
-  margin-right:auto;
-  width:458px;
+  margin-right: auto;
+  }
+.reasons-title {
+  width: 490px;
+  margin-top: 140px;
+  margin-right: auto;
+  margin-bottom: 53px;
+  margin-left: auto;
+}
+.main-title {
+  margin-bottom: 30px;
+  line-height: 26px;
 }
 .reason-block-left {
+  margin-bottom: 0;
   font-size: 0px;
-  margin-top:60px;
-  margin-bottom:0;
 }
 .reason-block-decription {
-  font-size:14px;
-  height:256px;
-}
-
-.reasons-title {
-  width:490px;
-  margin-top:140px;
-  margin-left:auto;
-  margin-bottom: 60px;
-  margin-right:auto;
-}
-.reasons-list {
-  margin-top:0px;
-  padding:0px;
-  font-size: 0px;
-
-}
-.reason-list-item h3 {
-  margin-top:0px;
-}
-.reason-list-item {
+  height: 256px;
   font-size: 14px;
-  height:330px;
-
-
+/*  padding-left: 60px;
+  padding-right: 60px;  Падинги все поломали :С*/
+}
+.reason-block-decription h3 {
+  width: 200px;
+  margin-top: 54px;
+  margin-bottom: 24px;
+}
+.advantage-list {
+  padding: 0px;
+  font-size: 0px;
+}
+.advantage-list-item {
+  height: 330px;
+}
+.advantage-list-item h3 {
+  margin-top: 161px;
+  margin-bottom: 24px;
 }
 .reason-block-right {
-  font-size:0px;
+  font-size: 0px;
 }
-
 .reasons {
-  margin-top:0px;
-  padding:0px;
+  padding: 0px;
   font-size: 0px;
 }
 .reason-item {
-
-  font-size: 14px;
-  height:256px;
-
+  height: 256px;
 }
- .index-interest-block h2 {
-  margin-top:0px;
-
+.reason-item h3 {
+  width: 160px;
+  margin-top: 46px;
+  margin-bottom: 24px;
+  padding: 0px;
 }
- .index-interest-block{
-  margin-top:0px;
-  height:291px;
-
+.index-interest-block{
+  display: inline-block;
+  height: 291px;
+  text-align: center;
+}
+.index-interest-block h2 {
+  margin-top: 57px;
+  margin-bottom: 31px;
 }
 .main-footer {
   font-size: 0px;
 }
-
+.layout-row p {
+  margin-bottom: 21px;
+}
 /* GRID */
-
-.layout-column {
+.layout-row {
   display:inline-block;
-  width: 400px;
+  width: 33.3%;
+  font-size: 14px;
   vertical-align: top;
 }
-.layout-column-2-in-1 {
+.layout-row-2-in-1 {
   display: inline-block;
   vertical-align:top;
 }
-.footer-layout-column {display:inline-block;
-width:400px;
-height:120px;
-font-size: 14px;}
+
 /* 'это просто для того что бы различить блоки' */
-.main-page-holder { background: #000000;}
-.main-header { background: #fd3a25;}
-.index-promo { background: #AAA888;}
-.reasons-title {background:#d9edf7; }
-.reason-block-left {background: #650673;}
-.reasons-list {background: #f3b0b2;}
-.reason-block-right {background: #650673;}
-.reasons {background:#d9edf7; }
-.index-interest-block { background: #fd3a25;}
-.index-search-hotel {background: #AAA888;}
+.main-page-holder { background: #f0f0f0;}
+.main-header { background: #ffffff;}
 .main-nav-item {background: #f3b0b2;}
-.reason-block-decription {background: #fd3a25;}
-.reason-list-item:nth-child(1) { background: #fd3a25;
-}
-.reason-list-item:nth-child(2) { background: #AAA888;
-}
-.reason-list-item:nth-child(3) { background: #fd3a25;
-}
+.index-promo { background: #AAA888;}
+.reasons-title {background: #81b3d2; }
+.reason-block-left {background: #81b3d2;}
+.advantage-list {background: #f3b0b2;}
+.reason-block-right {background: #81b3d2;}
+.index-interest-block { background: #766357;}
+.index-search-hotel {background: #AAA888;}
+.advantage-list-item:nth-child(1) { background: #f3b0b2;}
+.advantage-list-item:nth-child(2) { background: #81b3d2;}
+.advantage-list-item:nth-child(3) { background: #f3b0b2;}
+.reason-item:nth-child(1) { background: #f3b0b2;}
+.reason-item:nth-child(2) { background: #81b3d2;}
+.reason-item:nth-child(3) { background: #f3b0b2;}
 /* тут все закончилось */
