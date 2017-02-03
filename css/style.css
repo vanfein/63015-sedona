@@ -19,30 +19,44 @@ h3 {
   font-weight: bold;
   color: #000000;
 }
+/* */
 .main-page-holder {
   width: 1200px;
   margin: 0px auto;
 }
+/*header style*/
 .main-header {
   position: relative;
   height: 22px;
   padding-top: 17px;
   padding-bottom: 17px;
 }
-.main-nav-list {
+/* navigation */
+.main-nav-list-left {
+  float: left;
+  padding: 0;
   font-size: 0px;
+  text-align: center;
+}
+.main-nav-list-right{
+  float: right;
+  padding: 0;
+  font-size: 0px;
+  text-align: center;
 }
 .main-nav-item {
   display: inline-block;
-  width: 20%;
+  width: 240px;
   margin: 0;
   font-size: 14px;
 }
 .main-logo {
-  position: absolute; /*плохая идея :(( */
+  position: absolute;
   top: 0px;
   left: 530px;
 }
+/*index page style */
+/* welcome text */
 .index-promo {
   width: 458px;
   margin-top: 76px;
@@ -50,32 +64,43 @@ h3 {
   margin-bottom: 140px;
   margin-right: auto;
   }
+  /* index title */
 .reasons-title {
   width: 490px;
   margin-top: 140px;
   margin-right: auto;
   margin-bottom: 53px;
   margin-left: auto;
+  text-align: center;
 }
 .main-title {
   margin-bottom: 30px;
   line-height: 26px;
 }
+/* 1-2 Reasons. Wide blocks with images */
 .reason-block-left {
-  margin-bottom: 0;
+  font-size: 0px;
+}
+.reason-block-right {
   font-size: 0px;
 }
 .reason-block-decription {
   height: 256px;
   font-size: 14px;
-/*  padding-left: 60px;
-  padding-right: 60px;  Падинги все поломали :С*/
 }
 .reason-block-decription h3 {
   width: 200px;
   margin-top: 54px;
+  margin-right: auto;
   margin-bottom: 24px;
+  margin-left: auto;
 }
+.reason-block-decription p {
+  width: 303px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* House Food Souvenirs blocks */
 .advantage-list {
   padding: 0px;
   font-size: 0px;
@@ -85,11 +110,16 @@ h3 {
 }
 .advantage-list-item h3 {
   margin-top: 161px;
+  margin-right: auto;
   margin-bottom: 24px;
+  margin-left: auto;
 }
-.reason-block-right {
-  font-size: 0px;
+.advantage-list-item p {
+  width: 290px;
+  margin-right: auto;
+  margin-left: auto;
 }
+/* 3-5 reasons */
 .reasons {
   padding: 0px;
   font-size: 0px;
@@ -100,36 +130,122 @@ h3 {
 .reason-item h3 {
   width: 160px;
   margin-top: 46px;
+  margin-right: auto;
   margin-bottom: 24px;
+  margin-left: auto;
   padding: 0px;
 }
-.index-interest-block{
-  display: inline-block;
-  height: 291px;
+.reason-item p {
+  width: 275px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.index-search-hotel-block{
+  padding-top: 56px;
+  height: 235px;
   text-align: center;
 }
-.index-interest-block h2 {
-  margin-top: 57px;
+.index-search-hotel-block h2 {
+  margin-top: 0px;
   margin-bottom: 31px;
 }
+.index-search-hotel-block p {
+  line-height: 24px;
+}
+.search-hotel-form {
+  width:568px;
+}
+/* Hotels page */
+.hotels-form-filter {
+  height: 217px;
+  font-size: 0px;
+}
+.hotels-tittle-sorting {
+  height: 87px;
+  font-size: 0px;
+}
+.hotels-result-item {
+  height:151px;
+  font-size: 0px;
+}
+
+/* footer style */
 .main-footer {
   font-size: 0px;
 }
-.layout-row p {
-  margin-bottom: 21px;
+.footer-copyright-logo {
+  vertical-align: middle;
 }
+
+
 /* GRID */
+/* index  page grid */
 .layout-row {
   display:inline-block;
   width: 33.3%;
   font-size: 14px;
   vertical-align: top;
+  text-align: center;
+}
+.layout-row p {
+  margin-bottom: 21px;
 }
 .layout-row-2-in-1 {
   display: inline-block;
   vertical-align:top;
 }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+/* Hotels page grid */
+.layout-row-left {
+  display:inline-block;
+  width: 150px;
+  height: inherit;
+  margin: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 6%;
+  border: none;
+  font-size: 14px;
+  background: #AAA888;
+  vertical-align: top;
+}
+.layout-row-middle {
+  display:inline-block;
+  width: 363px;
+  height: inherit;
+  margin: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 1.25%;
+  border: none;
+  font-size: 14px;
+  background: #81b3d2;
+  vertical-align: top;
+}
+.layout-row-right {
+  display:inline-block;
+  width: 528px;
+  height: inherit;
+  margin: 0px;
+  padding-top: 0px;
+  padding-right: 6%;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border: none;
+  font-size: 14px;
+  background: #f3b0b2;
+  vertical-align: top;
+  text-align: right;
+}
+.hotels-tittle-sorting p {display:inline;}
 /* 'это просто для того что бы различить блоки' */
 .main-page-holder { background: #f0f0f0;}
 .main-header { background: #ffffff;}
@@ -147,4 +263,5 @@ h3 {
 .reason-item:nth-child(1) { background: #f3b0b2;}
 .reason-item:nth-child(2) { background: #81b3d2;}
 .reason-item:nth-child(3) { background: #f3b0b2;}
+
 /* тут все закончилось */
