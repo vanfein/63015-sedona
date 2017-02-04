@@ -202,6 +202,49 @@ h3 {
 }
 
 /* Hotels page grid */
+.hotels-result-item {
+height: 151px;
+font-size: 0px;
+
+}
+.hotel-image {
+  display:inline-block;
+  width: 150px;
+  height: inherit;
+  margin: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 6%;
+  font-size: 14px;
+  vertical-align: top;
+}
+.hotel-result-description{
+  display:inline-block;
+  width: 651px;
+  height: inherit;
+  margin: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 1.25%;
+  font-size: 14px;
+  vertical-align: top;
+}
+.hotels-rating {
+  display:inline-block;
+  width: 240px;
+  height: inherit;
+  margin: 0px;
+  padding-top: 0px;
+  padding-right: 6%;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  font-size: 14px;
+  vertical-align: top;
+  text-align: right;
+}
+
 .layout-row-left {
   display:inline-block;
   width: 150px;
@@ -245,6 +288,7 @@ h3 {
   vertical-align: top;
   text-align: right;
 }
+
 .hotels-tittle-sorting p {display:inline;}
 /* 'это просто для того что бы различить блоки' */
 .main-page-holder { background: #f0f0f0;}
@@ -260,8 +304,8 @@ h3 {
 .advantage-list-item:nth-child(1) { background: #f3b0b2;}
 .advantage-list-item:nth-child(2) { background: #81b3d2;}
 .advantage-list-item:nth-child(3) { background: #f3b0b2;}
-.reason-item:nth-child(1) { background: #f3b0b2;}
-.reason-item:nth-child(2) { background: #81b3d2;}
-.reason-item:nth-child(3) { background: #f3b0b2;}
+.hotel-image { background: #f3b0b2;}
+.hotel-result-description { background: #81b3d2;}
+.hotels-rating  { background: #f3b0b2;}
 
 /* тут все закончилось */
