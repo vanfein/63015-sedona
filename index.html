@@ -22,11 +22,11 @@
 							<a href="#">Карта штата</a>
 						</li>
 						<li class="main-nav-item">
-							<a href="#">Гостиницы</a>
+							<a href="hotels.html">Гостиницы</a>
 						</li>
 					</ul>
-					<a>
-						<img class="main-logo" src="img/main-logo.png" width="138" height="70" alt="city of sedona">
+					<a class="main-logo">
+						<img src="img/main-logo.png" width="138" height="70" alt="city of sedona">
 					</a>
 				</nav>
 			</header>
@@ -35,14 +35,14 @@
           <img src="img/welcome-sedona.png" alt="Sedona">
         </h1>
 			</div>
-			<div class="reasons-title">
-				<h2 class="main-title">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+			<div class="index-title">
+				<h2 class="main-title">Седона — небольшой городок в аризоне, заслуживающий большего!</h2>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
 			</div>
 			<div class="reason-block-left">
         <div class="reason-block-decription layout-row">
           <h3>Настоящий городок</h3>
-          <p> - №1 -</p>
+          <p> — №1 —</p>
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <img class="reason-block-image layout-row-2-in-1" src="img/index-reason-img-1.jpg" alt="">
@@ -66,24 +66,24 @@
 				<img class="reason-block-image layout-row-2-in-1" src="img/index-reason-img-2.jpg" alt="">
         <div class="reason-block-decription layout-row">
           <h3 class="reason-block-name">Там есть мост дьявола</h3>
-				  <p> - №2 -</p>
+				  <p> — №2 —</p>
 				  <p> Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </div>
 			<ul class="reasons">
 				<li class="reason-item layout-row">
 					<h3>Небольшая площадь</h3>
-					<p>- №3 -</p>
+					<p>— №3 —</p>
 					<p>Все достопримечательности находятся очень близко</p>
 				</li>
 				<li class="reason-item layout-row">
 					<h3>Красивая дорога</h3>
-					<p>- №4 -</p>
+					<p>— №4 —</p>
 					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</li>
 				<li class="reason-item layout-row">
 					<h3>Мало туристов</h3>
-					<p>- №5 -</p>
+					<p>— №5 —</p>
 					<p>Большинство едет в Гранд Каньон и толпится там</p>
 				</li>
 			</ul>
@@ -93,27 +93,31 @@
 				Укажите предполагаемые даты поездки, <br>
 				Мы покажем вам лучшие предложения гостиниц в Седоне
 				</p>
-				<a class="btn">Поиск гостиницы в Седоне</a>
+				<a class="btn btn-brown">Поиск гостиницы в Седоне</a>
 				<form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="get">
-					<label>Дата заезда:
-						<input type="date" name="date-check-in">
-						<button class="seach-hotel-btn-calendar"><!--Тут будет календарик -->Выбрать дату</button>
-					</label>
-					<label>Дата выезда:
-						<input type="date" name="date-check-out">
-						<button class="seach-hotel-btn-calendar"><!--Тут будет календарик -->Выбрать дату</button>
-					</label>
-					<label>Взрослые:
-						<button class="seach-hotel-btn-inc">+</button>
-						<input type="number" name="adult" value="2">
-						<button class="seach-hotel-btn-dec">-</button>
-					</label>
-					<label>Дети:
-						<button class="seach-hotel-btn-inc">+</button>
-						<input type="number" name="children" value="0">
-						<button class="seach-hotel-btn-dec">-</button>
-					</label>
-					<input type="submit" value="Найти">
+          <div class="search-hotel-form-item clearfix">
+            <label for="date-check-in">Дата заезда:</label>
+  					<input id="date-check-in" type="text" name="date-check-in">
+  					<button class="seach-hotel-btn-calendar">Выбрать дату</button>
+          </div>
+          <div class="search-hotel-form-item clearfix">
+            <label for="date-check-out">Дата выезда:</label>
+  					<input id="date-check-out" type="text" name="date-check-out">
+  					<button class="seach-hotel-btn-calendar">Выбрать дату</button>
+          </div>
+          <div class="search-hotel-form-item clearfix">
+            <label for="adult">Взрослые:</label>
+  					<button class="seach-hotel-btn-dec" >+</button>
+  					<input class="search-form-input-number" id="adult" type="number" name="adult" value="2">
+  					<button class="seach-hotel-btn-inc">-</button>
+          </div>
+          <div class="search-hotel-form-item clearfix">
+  					<label for="children">Дети:</label>
+  					<button class="seach-hotel-btn-dec">+</button>
+  					<input class="search-form-input-number" id="children" type="number" name="children" value="0">
+  					<button class="seach-hotel-btn-inc">-</button>
+          </div>
+				  <button class="btn btn-search-form" type="submit">Найти</button>
 				</form>
 			</div>
 			<div class="index-map">
@@ -127,9 +131,9 @@
         </div>
         <div class="layout-row">
   				<div class="footer-social">
-  					<a class="btn-social">Твиттер</a>
-  					<a class="btn-social">Фейсбук</a>
-  					<a class="btn-social">Ютуб</a>
+  					<a class="btn btn-social">Твиттер</a>
+  					<a class="btn btn-social">Фейсбук</a>
+  					<a class="btn btn-social">Ютуб</a>
   				</div>
         </div>
         <div class="layout-row">
