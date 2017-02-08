@@ -133,7 +133,7 @@ h3 {
   color: #ffffff;
 }
 .reason-block-decription h3 {
-  width: 200px;
+  width: 151px;
   margin-top: 54px;
   margin-right: auto;
   margin-bottom: 24px;
@@ -239,13 +239,27 @@ h3 {
   padding-bottom: 55px;
   padding-left: 55px;
   background-color: #ffffff;
+  font-size: 0px;
   font-weight: bold;
   color:#000000;
 }
 .search-hotel-form-item {
   position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 28px;
+  font-size: 14px;
   text-align: right;
   line-height: 38px;
+}
+.form-item-number {
+  width: 49.34%;
+}
+.form-item-number:last-of-type {
+  width: 38.85%;
+  margin-left: 3.05px;
+  padding-left: 51px;
+
 }
 .search-hotel-form label {
   float:left;
@@ -264,10 +278,23 @@ h3 {
   color:#000000;
 }
 .search-hotel-form .search-form-input-number {
-  width: 60px;
-  padding-left: 54px;
+  width: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
 }
-
+.search-form-input-number input {
+  text-align: center;
+}
+/* remove spin-buttons in webkit and firefox */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
 .seach-hotel-btn-calendar {
   position: absolute;
   top:8px;
@@ -302,30 +329,88 @@ h3 {
   background-position: 0px -112px;
   font-size: 0px;
 }
-
+.seach-hotel-btn-calendar:hover {
+  background-position: 0px -632px;
+}
+.seach-hotel-btn-calendar:active {
+  background-position: 0px -600px;
+}
+.seach-hotel-btn-inc:hover {
+  background-position: 0px -579px;
+}
+.seach-hotel-btn-inc:active {
+  background-position: 0px -558px;
+}
+.seach-hotel-btn-dec:hover {
+  background-position: 0px -545px;
+}
+.seach-hotel-btn-dec:active {
+  background-position: 0px -532px;
+}
+/* */
+.index-map {
+  margin-bottom: -126px;
+}
 /* Hotels page */
 .hotels-form-filter {
-  height: 217px;
+  height: 163px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   background: url("../img/hotels-filter-bg.jpg") #6f91b0 no-repeat;
   font-size: 0px;
   color: #ffffff;
 }
+
 .hotels-form-filter legend {
   font-weight: bold;
+}
+.hotels-form-filter ul {
+  list-style-type:none;
+  padding-left: 0px;
 }
 .hotels-tittle-sorting {
   height: 87px;
   font-size: 0px;
 }
+.hotels-tittle h1 {
+  margin-top: 30px;
+  font-size: 21px;
+  line-height: 26px;
+}
+.hotels-sorting {
+    padding-top: 35px;
+}
+.hotels-sorting-option {
+  margin-left: 30px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.hotels-sorting span {
+  margin-right: 3px;
+  font-size: 12px;
+  line-height: 18px;
+}
 .hotels-result-item {
   height:151px;
   font-size: 0px;
 }
+.hotel-image {
+  padding-top: 30px;
+}
+.hotels-result-item h3 {
+  margin-top: 27px;
+}
+.result-item-btn-holder{
+  display: inline-block;
+  min-width: 110px;
+}
+.result-item-btn-holder span {
+  display: block;
+}
 /* footer style */
 .main-footer {
   height: 127px;
-  position: relative;;
-  margin-top: -127px;
+  position: relative;
   font-size: 0px;
   background: rgba(245, 245, 245, 0.9);
   z-index: 1;
@@ -342,9 +427,27 @@ h3 {
 .footer-copyright{
   padding-top: 27px;
 }
+.footer-copyright p {
+  display: inline-block;
+}
 .footer-copyright-logo {
   vertical-align: middle;
 }
+.footer-copyright-logo:hover {
+  opacity: 0;
+}
+.footer-copyright-logo-replace {
+  display: inline-block;
+  margin-left: 10px;
+  width: 113px;
+  height: 39px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: 0px -483px;
+}
+.footer-copyright-logo-replace:active {
+background-position: 0px -434px;
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 0px;
@@ -381,8 +484,9 @@ h3 {
 }
 .btn-search-form {
   width: 458px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  margin-top: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-size: 21px;
   line-height: 26px;
 }
@@ -429,7 +533,9 @@ h3 {
   height: 16px;
   background-position: 0px -54px;
 }
-
+.btn-social:active::before{
+  opacity: 0.3;
+}
 /* GRID */
 /* clearfix */
 .clearfix::after {
@@ -500,7 +606,6 @@ h3 {
   width: 150px;
   height: inherit;
   margin: 0px;
-  padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 6%;
@@ -512,7 +617,6 @@ h3 {
   width: 651px;
   height: inherit;
   margin: 0px;
-  padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 1.25%;
@@ -524,7 +628,6 @@ h3 {
   width: 240px;
   height: inherit;
   margin: 0px;
-  padding-top: 0px;
   padding-right: 6%;
   padding-bottom: 0px;
   padding-left: 0px;
