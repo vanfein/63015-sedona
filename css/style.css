@@ -270,11 +270,12 @@ h3 {
 }
 .search-hotel-form input {
   background-color: #f5f5f5;
-  width: 333px;
+  width: 303px;
   height: 22px;
-  padding-left: 13px;
   padding-top: 8px;
+  padding-right: 30px;
   padding-bottom: 8px;
+  padding-left: 13px;
   border: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -286,7 +287,7 @@ h3 {
   padding-right: 30px;
   text-align: center;
 }
-.search-form-input-number input {
+.search-form-input-number {
   text-align: center;
 }
 /* remove spin-buttons in webkit and firefox */
@@ -312,47 +313,53 @@ input[type='number'] {
 }
 .seach-hotel-btn-inc {
   position: absolute;
-  top:14px;
-  right: 14px;
-  width: 11px;
-  height: 11px;
+  top:9px;
+  right: 9px;
+  width: 23px;
+  height: 23px;
   border: none;
   background: url("../img/sprite.png") no-repeat;
-  background-position: 0px -125px;
+  background-position: -42px -124px;
   font-size: 0px;
 }
 .seach-hotel-btn-dec {
   position: absolute;
-  top:18px;
-  right:89px;
-  width: 11px;
-  height: 11px;
+  top:9px;
+  right:83px;
+  width: 23px;
+  height: 23px;
   border: none;
   background: url("../img/sprite.png") no-repeat;
-  background-position: 0px -112px;
+  background-position: -42px -98px;
   font-size: 0px;
 }
 .seach-hotel-btn-calendar:hover {
   background-position: 0px -632px;
+  cursor: pointer;
 }
 .seach-hotel-btn-calendar:active {
   background-position: 0px -600px;
 }
 .seach-hotel-btn-inc:hover {
-  background-position: 0px -579px;
+  background-position: -42px -595px;
+  cursor: pointer;
 }
 .seach-hotel-btn-inc:active {
-  background-position: 0px -558px;
+  background-position: -42px -566px;
 }
 .seach-hotel-btn-dec:hover {
-  background-position: 0px -545px;
+  background-position: -42px -540px;
+    cursor: pointer;
 }
 .seach-hotel-btn-dec:active {
-  background-position: 0px -532px;
+  background-position: -42px -519px;
 }
 /* */
 .index-map {
-  margin-bottom: -126px;
+/*  margin-bottom: -126px;*/
+height: 473px;
+padding: 0;
+margin-bottom: 0px;
 }
 /* Hotels page */
 .hotels-form-filter {
@@ -377,6 +384,10 @@ input[type='number'] {
 }
 .checkbox {
   display: none;
+
+}
+.hotels-form-filter {
+    vertical-align: middle;
 }
 .checkbox+ label {
   cursor: pointer;
@@ -386,7 +397,8 @@ input[type='number'] {
   display: inline-block;
   width: 24px;
   height: 22px;
-  margin: 0 5px 0 0;
+  margin: 0 15px 6px 0;
+  vertical-align: top;
   background: url("../img/sprite.png") no-repeat;
 }
 .checkbox + label::before {
@@ -399,9 +411,6 @@ input[type='number'] {
   background-position: -34px 0px;
 }
 .checkbox:checked + label::before {
-  background-position: -64px 0px;
-}
-.checkbox + label:hover::before {
   background-position: -64px 0px;
 }
 .checkbox:disabled + label::before {
@@ -417,7 +426,6 @@ input[type='number'] {
   border: 2px solid #ffffff;
   border-radius: 2px;
   font-size: 0px;
-
 }
 .cost-value-start-end {
   display: inline-block;
@@ -467,6 +475,10 @@ input[type='number'] {
   color: rgba(0, 0, 0, 1);
   border: none;
 }
+.hotels-sorting-option.sorting-option-active {
+  color: rgba(129, 179, 210, 1);
+  border: none;
+}
 .hotels-sorting span {
   margin-right: 3px;
   font-size: 12px;
@@ -499,7 +511,9 @@ input[type='number'] {
 .hotels-order-item-down:active{
   background-position: -12px -146px;
 }
-
+.hotels-order-item-down.order-item-active {
+  background-position: -12px -146px;
+}
 .hotels-result-item {
   height:150px;
   font-size: 0px;
@@ -538,26 +552,29 @@ input[type='number'] {
 }
 /* footer style */
 .main-footer {
-  height: 127px;
   position: relative;
+  height: 120px;
+  margin-top: 0;
   font-size: 0px;
   background: rgba(245, 245, 245, 0.9);
   z-index: 1;
 }
 .footer-hashtag{
-  padding-top: 48px;
+  padding-top: 46px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 .footer-social {
-  padding-top: 36px;
+padding-top: 36px;
+font-size: 0px;
 }
 .footer-copyright{
-  padding-top: 27px;
+padding-top: 35px;
 }
 .footer-copyright p {
   display: inline-block;
+  padding-right: 5px;
 }
 .footer-copyright-logo {
   vertical-align: middle;
@@ -567,7 +584,7 @@ input[type='number'] {
 }
 .footer-copyright-logo-replace {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 0px;
   width: 113px;
   height: 39px;
   background: url("../img/sprite.png") no-repeat;
@@ -657,9 +674,12 @@ background-position: 0px -434px;
   display: inline-block;
   width: 46px;
   height: 48px;
-  margin-left: 2px;
+  margin-left: 6px;
   padding: 0;
   font-size: 0px;
+}
+.btn-social:first-child{
+  margin-left: 0px;
 }
 .btn-social::before {
   position: absolute;
