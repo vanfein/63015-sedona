@@ -206,31 +206,42 @@ h3 {
 .main-header {
   position: relative;
 }
+.main-logo {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 138px;
+  height: 70px;
+  margin: auto;
+  z-index: 1;
+}
 /* navigation */
 .main-nav {
   background-color: #ffffff;
 }
 .main-nav-list-left {
-  float: left;
-  padding: 0;
+  padding-top: 17px;
+  padding-right: 6%;
+  padding-bottom: 13px;
+  padding-left: 6%;
   font-size: 0px;
-  text-align: center;
-}
-.main-nav-list-right{
-  float: right;
-  padding: 0;
-  font-size: 0px;
-  text-align: center;
+  text-align: right;
 }
 .main-nav-item {
   display: inline-block;
-  width: 240px;
+  width: 20%;
   margin: 0;
   font-size: 14px;
 }
-.main-nav ul {
-  padding-top: 17px;
-  padding-bottom: 13px;
+.main-nav-item:nth-child(1), .main-nav-item:nth-child(2) {
+  float:left;
+  text-align: left;
+}
+.main-nav-item:nth-child(1) {
+  margin-right: 30px;
+}
+.main-nav-item:nth-child(4){
+  margin-left: 30px;
 }
 .main-nav-item a {
   font-weight: bold;
@@ -241,19 +252,7 @@ h3 {
   color: #81b3d2;
 }
 .main-nav-item a:active {
-  color: rgba(0, 0, 0, 0.3);;
-}
-.main-nav-item .nav-item-active {
-  color: #766357;
-}
-.main-logo {
-  position: absolute;
-  right: 0;
-  left: 0;
-  width: 138px;
-  height: 70px;
-  margin: auto;
-  z-index: 1;
+  color: rgba(0, 0, 0, 0.3);
 }
 /*index page style */
 /* welcome text */
@@ -418,6 +417,9 @@ h3 {
   color:#000000;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
 }
+.index-form-show {
+  display: none;
+}
 /* Search form button */
 .btn-search-form {
   width: 458px;
@@ -466,6 +468,7 @@ h3 {
   padding-left: 13px;
   background-color: #f5f5f5;
   border: none;
+  font: inherit;
   font-weight: bold;
   text-transform: uppercase;
   color:#000000;
@@ -531,11 +534,11 @@ input[type="number"] {
   background-position: 0px -600px;
 }
 .seach-hotel-btn-inc:hover {
-  background-position: -41px -595px;
+  background-position: -41px -594px;
   cursor: pointer;
 }
 .seach-hotel-btn-inc:active {
-  background-position: -41px -566px;
+  background-position: -41px -565px;
 }
 .seach-hotel-btn-dec:hover {
   background-position: -42px -540px;
@@ -546,9 +549,9 @@ input[type="number"] {
 }
 /* map on the index page*/
 .index-map {
-height: 473px;
-margin-bottom: 0px;
-padding: 0;
+  height: 593px;
+  margin-bottom: -120px;
+  padding: 0;
 }
 /* Hotels page */
 /*filter style*/
@@ -806,8 +809,7 @@ padding: 0;
 .main-footer {
   position: relative;
   height: 120px;
-  margin-top: 0;
-  background: rgba(245, 245, 245, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   font-size: 0px;
   z-index: 1;
 }
