@@ -71,10 +71,10 @@ body {
   vertical-align:top;
 }
 .layout-row-2-in-1:nth-child(2) {
-  background: url("../img/index-reason-img-1.jpg");
+  background: url("../img/index-reason-img-one.jpg");
 }
 .layout-row-2-in-1:nth-child(1) {
-  background: url("../img/index-reason-img-2.jpg");
+  background: url("../img/index-reason-img-two.jpg");
 }
 /* Hotels page grid */
 /* Hotels-form-filter grid */
@@ -298,13 +298,13 @@ h3 {
 .reason-block-left, .reason-block-right {
   font-size: 0px;
 }
-.reason-block-decription {
+.reason-block-description {
   height: 256px;
   background-color: #81b3d2;
   font-size: 14px;
   color: #ffffff;
 }
-.reason-block-decription h3 {
+.reason-block-description h3 {
   width: 151px;
   margin-top: 54px;
   margin-right: auto;
@@ -312,7 +312,7 @@ h3 {
   margin-left: auto;
   color: #ffffff;
 }
-.reason-block-decription p {
+.reason-block-description p {
   width: 300px;
   margin-right: auto;
   margin-left: auto;
@@ -555,6 +555,7 @@ input[type="number"] {
   padding: 0;
 }
 .index-map iframe {
+  margin: 0px;
   border: none;
 }
 /* Hotels page */
@@ -885,7 +886,7 @@ input[type="number"] {
   font-size: 0px;
 }
 .btn-social:first-child{
-  margin-left: 0px;
+  margin-left: -2px;
 }
 .btn-social::before {
   content: "";
