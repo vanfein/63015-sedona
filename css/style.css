@@ -35,7 +35,7 @@ body {
   background-color: #f2f2f2;
   font-size: 14px;
   line-height:21px;
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", Trebuchet, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   color:#333333;
@@ -313,13 +313,13 @@ h3 {
   color: #ffffff;
 }
 .reason-block-decription p {
-  width: 303px;
+  width: 300px;
   margin-right: auto;
   margin-left: auto;
 }
 /* House Food Souvenirs blocks */
 .advantage-list {
-  padding: 0px;
+  padding: 0;
   font-size: 0px;
 }
 .advantage-list-item {
@@ -367,10 +367,11 @@ h3 {
 /* 3-5 reasons */
 .reasons {
   padding: 0px;
+  padding-top: 1px;
   font-size: 0px;
 }
 .reason-item {
-  min-height: 256px;
+  min-height: 255px;
   background-color: #eeeeee;
 }
 .reason-item h3 {
@@ -553,6 +554,9 @@ input[type="number"] {
   margin-bottom: -120px;
   padding: 0;
 }
+.index-map iframe {
+  border: none;
+}
 /* Hotels page */
 /*filter style*/
 .hotels-form-filter {
@@ -627,13 +631,15 @@ input[type="number"] {
 .cost-controls::after {
   content: "";
   position: absolute;
-  top:50%;
-  left:50%;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left:0;
   width: 2px;
   height: 22px;
+  margin: auto;
   background-color: #ffffff;
-  transform: translate(-50%, -50%);
-}
+  }
 .cost-controls label {
   display: inline-block;
   font-size: 14px;
