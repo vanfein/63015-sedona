@@ -1,0 +1,1 @@
+var indexFormOpen=document.querySelector(".btn-brown"),indexFormStatus=document.querySelector(".search-hotel-form");indexFormOpen.addEventListener("click",function(a){a.preventDefault(),indexFormStatus.classList.toggle("index-form-show")});

@@ -67,15 +67,10 @@ body {
 .layout-row-2-in-1 {
   display: inline-block;
   width: 66.666666%;
-  height: 256px;
+  min-height: 256px;
   vertical-align: top;
 }
-.layout-row-2-in-1:nth-child(2) {
-  background: url("../img/index-reason-img-one.jpg");
-}
-.layout-row-2-in-1:nth-child(1) {
-  background: url("../img/index-reason-img-two.jpg");
-}
+
 /* Hotels page grid */
 /* Hotels-form-filter grid */
 .hotels-form-infrastructure {
@@ -298,8 +293,16 @@ h3 {
 .reason-block-left, .reason-block-right {
   font-size: 0px;
 }
+.reason-block-image:nth-child(2) {
+  background: url("../img/index-reason-img-one.jpg");
+  background-color: #a3a785;
+}
+.reason-block-image:nth-child(1) {
+  background: url("../img/index-reason-img-two.jpg");
+  background-color: #a3a785;
+}
 .reason-block-description {
-  height: 256px;
+  min-height: 256px;
   background-color: #81b3d2;
   font-size: 14px;
   color: #ffffff;
@@ -327,7 +330,7 @@ h3 {
 }
 .advantage-list-item {
   position: relative;
-  height: 330px;
+  min-height: 330px;
 }
 /* Icons in advantage blocks */
 .advantage-list-item::before{
@@ -357,6 +360,7 @@ h3 {
   background-position: 0px -348px;
 }
 .advantage-list-item h3 {
+  width: 240px;
   margin-top: 161px;
   margin-right: auto;
   margin-bottom: 24px;
@@ -420,6 +424,7 @@ h3 {
   font-weight: bold;
   color: #000000;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+  z-index: 2;
 }
 .index-form-show {
   display: none;
@@ -553,13 +558,24 @@ input[type="number"] {
 }
 /* map on the index page*/
 .index-map {
+  position: relative;
   height: 593px;
   margin-bottom: -120px;
   padding: 0;
 }
 .index-map iframe {
+  position: relative;
   margin: 0px;
   border: none;
+  z-index: 1;
+}
+.index-map-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 593px;
+  z-index: 0;
 }
 /* Hotels page */
 /*filter style*/
