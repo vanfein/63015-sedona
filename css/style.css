@@ -35,7 +35,7 @@ body {
   background-color: #f2f2f2;
   font-size: 14px;
   line-height:21px;
-  font-family: "PT Sans", Trebuchet, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   color:#333333;
@@ -93,7 +93,7 @@ body {
 }
 .hotels-form-hotel-type {
   display: inline-block;
-  width: 472.13px;
+  width: 472px;
   height: inherit;
   margin: 0px;
   padding-top: 0px;
@@ -316,6 +316,9 @@ h3 {
   width: 300px;
   margin-right: auto;
   margin-left: auto;
+}
+.reason-block-right p {
+  width: 310px;
 }
 /* House Food Souvenirs blocks */
 .advantage-list {
@@ -622,8 +625,9 @@ input[type="number"] {
 .cost-controls{
   position:relative;
   margin-top: 0px;
+  margin-right: -1px;
   margin-bottom: 20px;
-  margin-left: 10px;
+  margin-left: 11px;
   background: none;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -653,11 +657,11 @@ input[type="number"] {
   padding-left: 65px;
 }
 .max-cost {
-  width: 90px;
+  width: 100px;
   padding-left: 55px;
 }
 .hotels-tittle-sorting {
-  height: 87px;
+  height: 86px;
   font-size: 0px;
 }
 .cost-controls input {
@@ -673,16 +677,19 @@ input[type="number"] {
   margin-bottom: 32px;
   margin-left: 11px;
 }
-.range-controls .scale {
+.range-control {
   height: 2px;
+  margin-bottom: 32px;
+  margin-left: 11px;
   background-color: rgba(255, 255, 255, 0.3);
 }
-.range-controls .bar {
-  width: 79.5%;
+.bar {
+  position: relative;
+  width: 86%;
   height: 2px;
   background-color: #ffffff;
 }
-.range-controls .range-toggle {
+.range-toggle {
   position: absolute;
   top: -9px;
   width: 4px;
@@ -697,10 +704,10 @@ input[type="number"] {
   background-color: #1c4f80;
 }
 .range-toggle-min {
-  left:0px;
+  left: 0px;
 }
 .range-toggle-max {
-  left:79.5%;
+  right: 0px;
 }
 .hotels-tittle h1 {
   margin-top: 30px;
@@ -708,7 +715,7 @@ input[type="number"] {
   line-height: 26px;
 }
 .hotels-sorting {
-  padding-top: 35px;
+  padding-top: 34px;
 }
 .hotels-sorting-option {
   margin-left: 30px;
@@ -780,6 +787,7 @@ input[type="number"] {
   margin-bottom: 10px;
 }
 .hotel-name {
+  margin-left:0px;
   text-decoration: none;
   color: #000000;
 }
@@ -850,6 +858,7 @@ input[type="number"] {
   margin-left: 0px;
   background: url("../img/sprite.png") no-repeat;
   background-position: 0px -483px;
+  vertical-align: middle;
 }
 .footer-copyright-logo-replace:active {
   background-position: 0px -434px;
