@@ -1,46 +1,21 @@
-/* cyrillic */
 @font-face {
   font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("PT Sans"), local("PTSans-Regular"), url("https://fonts.gstatic.com/s/ptsans/v8/vtwNVMP8y9C17vLvIBNZI_Y6323mHUZFJMgTvxaG2iE.woff2") format("woff2");
-}
-/* cyrillic bold*/
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("PT Sans Bold"), local("PTSans-Bold"), url("https://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPiEAvth_LlrfE80CYdSH47w.woff2") format("woff2");
-}
-/* latin */
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("PT Sans Bold"), local("PTSans-Bold"), url("https://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2") format("woff2");
-}
-/* latin bold*/
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("PT Sans"), local("PTSans-Regular"), url("https://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2") format("woff2");
-}
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/PT_Sans-Web-Bold.eot") format("embedded-opentype");
-  src: url("../fonts/PT_Sans-Web-Bold.eot?#iefix") format("embedded-opentype");
+  src: local("PT Sans"), local("PTSans-Bold");
+  src: url("../fonts/PT_Sans-Web-Bold.eot"),
+       url("../fonts/PT_Sans-Web-Bold.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/PT_Sans-Web-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/PT_Sans-Web-Regular.eot") format("embedded-opentype");
-  src: url("../fonts/PT_Sans-Web-Regular.eot?#iefix") format("embedded-opentype");
+  src: local("PT Sans"), local("PTSans-Regular");
+  src: url("../fonts/PT_Sans-Web-Regular.eot"),
+       url("../fonts/PT_Sans-Web-Regular.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/PT_Sans-Web-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-
 html,
 body {
   height: 100%;
