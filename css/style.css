@@ -1,16 +1,16 @@
 @font-face {
   font-family: "pt-sans";
-  src: url("../fonts/pt_sans-web-bold.eot");
-  src: url("../fonts/pt_sans-web-bold.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/pt_sans-web-bold.woff2") format("woff2");
+  src: url("../fonts/pt_sans-bold.eot");
+  src: url("../fonts/pt_sans-bold.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/pt_sans-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "pt-sans";
-  src: url("../fonts/pt_sans-web-regular.eot");
-  src: url("../fonts/pt_sans-web-regular.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/pt_sans-web-regular.woff2") format("woff2");
+  src: url("../fonts/pt_sans-regular.eot");
+  src: url("../fonts/pt_sans-regular.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/pt_sans-regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +23,7 @@ body {
   background-color: #f2f2f2;
   font-size: 14px;
   line-height: 21px;
-  font-family: "pt-sans", Arial, sans-serif;
+  font-family: "pt-sans", "Arial", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   color: #333333;
