@@ -3,29 +3,44 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: local("PT Sans"), local("PTSans-Regular"), url(https://fonts.gstatic.com/s/ptsans/v8/vtwNVMP8y9C17vLvIBNZI_Y6323mHUZFJMgTvxaG2iE.woff2) format("woff2");
+  src: local("PT Sans"), local("PTSans-Regular"), url("https://fonts.gstatic.com/s/ptsans/v8/vtwNVMP8y9C17vLvIBNZI_Y6323mHUZFJMgTvxaG2iE.woff2") format("woff2");
 }
 /* cyrillic bold*/
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: local("PT Sans Bold"), local("PTSans-Bold"), url(https://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPiEAvth_LlrfE80CYdSH47w.woff2) format("woff2");
+  src: local("PT Sans Bold"), local("PTSans-Bold"), url("https://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPiEAvth_LlrfE80CYdSH47w.woff2") format("woff2");
 }
 /* latin */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: local("PT Sans Bold"), local("PTSans-Bold"), url(https://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2) format("woff2");
+  src: local("PT Sans Bold"), local("PTSans-Bold"), url("https://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2") format("woff2");
 }
 /* latin bold*/
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: local("PT Sans"), local("PTSans-Regular"), url(https://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2) format("woff2");
+  src: local("PT Sans"), local("PTSans-Regular"), url("https://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2") format("woff2");
 }
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PT_Sans-Web-Bold.eot") format("embedded-opentype");
+  src: url("../fonts/PT_Sans-Web-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PT_Sans-Web-Regular.eot") format("embedded-opentype");
+  src: url("../fonts/PT_Sans-Web-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   height: 100%;
@@ -479,8 +494,12 @@ h3 {
   border: none;
   font: inherit;
   font-weight: bold;
+  line-height: 21px;
   text-transform: uppercase;
   color:#000000;
+}
+.search-hotel-form input::-ms-clear {
+   display: none;
 }
 .search-hotel-form .search-form-input-number {
   width: 55px;
@@ -792,7 +811,7 @@ input[type="number"] {
   background-position: -12px -146px;
 }
 .hotels-result-item {
-  height: 150px;
+  min-height: 150px;
   border-top: 1px solid #e5e5e5;
   font-size: 0px;
 }
@@ -801,6 +820,10 @@ input[type="number"] {
 }
 .hotel-image {
   padding-top: 30px;
+}
+.hotel-image img{
+  width: 135px;
+  height: 90px;
 }
 .hotels-result-item h3 {
   margin-top: 27px;
@@ -857,7 +880,9 @@ input[type="number"] {
 .footer-social {
   padding-top: 36px;
   font-size: 0px;
+  line-height: 0px;
 }
+
 .footer-copyright {
   position: relative;
   padding-top: 35px;
@@ -868,9 +893,11 @@ input[type="number"] {
 }
 .footer-copyright-logo {
   vertical-align: middle;
-  z-index: 2;
 }
 .footer-copyright-logo:hover {
+  opacity: 0;
+}
+.footer-copyright-logo:active {
   opacity: 0;
 }
 .footer-copyright-logo-replace {
