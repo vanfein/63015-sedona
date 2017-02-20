@@ -173,18 +173,7 @@ body {
   background-color: #503e33;
   color:rgba(245, 245, 245, 0.3);
 }
-h2 {
-  font-size: 30px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #000000;
-}
-h3 {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: bold;
-  color: #000000;
-}
+
 /*header style*/
 .main-header {
   position: relative;
@@ -203,7 +192,7 @@ h3 {
   background-color: #ffffff;
 }
 .main-nav-list-left {
-  padding-top: 17px;
+  padding-top: 14px;
   padding-right: 6%;
   padding-bottom: 13px;
   padding-left: 6%;
@@ -215,6 +204,7 @@ h3 {
   width: 20%;
   margin: 0;
   font-size: 14px;
+  line-height: 26px;
 }
 .main-nav-item:nth-child(1), .main-nav-item:nth-child(2) {
   float: left;
@@ -236,6 +226,9 @@ h3 {
 }
 .main-nav-item a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+.nav-item-active a {
+  color: #766357;
 }
 /*index page style */
 /* welcome text */
@@ -267,15 +260,18 @@ h3 {
   width: 495px;
   margin-top: 0px;
   margin-right: auto;
-  margin-bottom: 53px;
+  margin-bottom: 51px;
   margin-left: auto;
+  font-size: 14px;
+  line-height: 26px;
   text-align: center;
 }
 .main-title {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   font-size: 21px;
   line-height: 26px;
+  color: #000000;
 }
 /* 1-2 Reasons. Wide blocks with images */
 .reason-block-left, .reason-block-right {
@@ -301,6 +297,8 @@ h3 {
   margin-right: auto;
   margin-bottom: 24px;
   margin-left: auto;
+  font-size: 21px;
+  line-height: 21px;
   color: #ffffff;
 }
 .reason-block-description p {
@@ -353,6 +351,9 @@ h3 {
   margin-right: auto;
   margin-bottom: 24px;
   margin-left: auto;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
 }
 .advantage-list-item p {
   width: 290px;
@@ -376,6 +377,9 @@ h3 {
   margin-bottom: 24px;
   margin-left: auto;
   padding: 0px;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
 }
 .reason-item p {
   width: 275px;
@@ -385,24 +389,29 @@ h3 {
 /* search hotel block, search button and form*/
 .index-search-hotel-block{
   position: relative;
-  height: 235px;
-  padding-top: 56px;
+  height: 238px;
+  padding-top: 53px;
   text-align: center;
 }
 .index-search-hotel-block h2 {
   margin-top: 0px;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
 }
 .index-search-hotel-block p {
-  margin-bottom: 46px;
+  margin-top: 0px;
+  margin-bottom: 47px;
   line-height: 24px;
 }
 .search-hotel-form {
   position: absolute;
-  left: 50%;
+  left: 0;
+  right:0;
   width: 458px;
   min-height: 285px;
-  margin-left: -284px;
+  margin: auto;
   padding-top: 55px;
   padding-right: 55px;
   padding-bottom: 55px;
@@ -455,6 +464,7 @@ h3 {
 .search-hotel-form label {
   float: left;
   margin: 0px;
+  text-align: center;
 }
 .search-hotel-form input {
   width: 303px;
@@ -467,7 +477,7 @@ h3 {
   border: none;
   font: inherit;
   font-weight: bold;
-  line-height: 21px;
+  line-height: 26px;
   text-transform: uppercase;
   color:#000000;
 }
@@ -725,6 +735,7 @@ input[type="number"] {
   margin-top: 30px;
   font-size: 21px;
   line-height: 26px;
+  color: #000000;
 }
 .hotels-sorting {
   padding-top: 34px;
@@ -799,8 +810,10 @@ input[type="number"] {
   height: 90px;
 }
 .hotels-result-item h3 {
-  margin-top: 27px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 7px;
+  font-size: 21px;
+  line-height: 26px;
 }
 .hotel-name {
   margin-left: 0px;
